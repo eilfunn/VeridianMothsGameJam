@@ -1,0 +1,32 @@
+**OPEN GAME**
+(music)
+
+**Open credits**
+Main Menu
+
+**start game**
+PC starts in bed
+Player moves PC
+(knock on door)
+Player moves PC to door and opens
+Player meets NPC1 outside
+NPC1: You're here to get rid of the ghost, right? Please say yes.
+OHH!!! GREAT!!!
+NPC2 probably already told you over the phone but NPC3 got themself locked in the big ol' mansion
+with a really angry ghost. We told them not to go but they did anyway. Does anyone ever listen here?
+Anyway, we can't contact them and we're pretty sure the ghost is holding them captive.
+We really must hurry. Follow me!
+Player moves PC to follow NPC1 to a house
+PC meets NPC2 in the house
+NPC2: Oh great!! You must be PC. Please help us!! NPC3 is trapped in the mansion and the door is locked. We can't get to them.
+I think that ghost is keeping them there. No one has been inside that mansion for decades because of the ghosts. 
+NPC2 gives info about the main ghost
+PC can leave and explore town, if they try to go to the mansion, error message: Oh no.. I forgot to unpack my things at home
+Player moves PC back to home, opens box
+Moth familiar comes out of box, says some things
+PC goes to mansion, moth familiar says how to use powerful spells
+PC has to use spell on door to open it
+Door opens
+
+**MANSION**
+lvl 1

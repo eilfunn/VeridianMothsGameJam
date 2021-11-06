@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/A View From a Lake.png-57611a7cc2aec0f229490ee58c053cff.stex"
+path="res://.import/MothNStuff.png-d7f878df125be9ef45429bb95fddded0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Test Art/A View From a Lake.png"
-dest_files=[ "res://.import/A View From a Lake.png-57611a7cc2aec0f229490ee58c053cff.stex" ]
+source_file="res://MothNStuff.png"
+dest_files=[ "res://.import/MothNStuff.png-d7f878df125be9ef45429bb95fddded0.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,7 +28,8 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

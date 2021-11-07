@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Prefabs/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/ExitTile.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Tilemaps/wall_tile.tres" type="TileSet" id=3]
+[ext_resource path="res://Art/Sprites/pc#placeholder.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/WorldScenes/Pilp.gd" type="Script" id=5]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 23.7025
 
 [node name="Village" type="Node2D"]
 
@@ -21,5 +26,18 @@ next_area = "res://Scenes/WorldScenes/PlayerHouse.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 224, 96 )
+
+[node name="Pilp" type="Area2D" parent="."]
+position = Vector2( 224.69, 121.22 )
+script = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Pilp"]
+modulate = Color( 0.2, 0.92549, 0.243137, 1 )
+position = Vector2( 0.0113373, -0.010437 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pilp"]
+position = Vector2( 0.00193787, 0.0147171 )
+shape = SubResource( 1 )
 
 [editable path="ExitTiles"]

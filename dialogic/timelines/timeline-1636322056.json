@@ -1,0 +1,56 @@
+{
+	"events": [
+		{
+			"character": "character-1636322031.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You're here to get rid of the ghost, right? Please say yes."
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "OHH!!! GREAT!!!"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cinnamon probably already told you over the phone but Moku got themself locked in the big ol' mansion\nwith a really angry ghost. We told them not to go but they did anyway. Does anyone ever listen here?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Anyway, we can't contact them and we're pretty sure the ghost is holding them captive."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We really must hurry. Follow me!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1636322056.json",
+		"name": "Greetings"
+	}
+}

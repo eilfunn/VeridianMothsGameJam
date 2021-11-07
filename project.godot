@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="VeridianMothsGameJam"
-run/main_scene="res://Scenes/DemoScene.tscn"
+run/main_scene="res://Scenes/WorldScenes/PlayerHouse.tscn"
 config/icon="res://icon.png"
 
 [display]

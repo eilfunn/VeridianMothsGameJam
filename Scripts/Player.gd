@@ -4,7 +4,19 @@ const MAX_SPEED = 100
 const ACCELERATION = 500
 const FRICTION = 500
 
+#variable from jsalex7
+const PLAYER_HOUSE_X = 250 #use this for set the spawning position when the player enters into a new place
+const PLAYER_HOUSE_Y = 230
+
+var is_it_start = true
+#end of jsalex7
 var velocity = Vector2.ZERO
+
+func _ready():
+	var scene_name = get_tree().get_current_scene().get_name()
+	if scene_name == "PlayerHouse" and !self.is_it_start:
+		self.position = Vector2(self.PLAYER_HOUSE_X, self.PLAYER_HOUSE_Y)
+	self.is_it_start = false
 
 func _physics_process(delta):
 	var input_vector = Vector2.ZERO
@@ -17,5 +29,5 @@ func _physics_process(delta):
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	
-	move_and_slide(velocity);
+	move_and_slide(velocity)
 	pass

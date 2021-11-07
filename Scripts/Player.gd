@@ -19,6 +19,10 @@ func _ready():
 	self.is_it_start = false
 
 func _physics_process(delta):
+	move_state(delta)
+	pass
+
+func move_state(delta):
 	var input_vector = Vector2.ZERO
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
@@ -29,5 +33,5 @@ func _physics_process(delta):
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	
-	move_and_slide(velocity)
-	pass
+	velocity = move_and_slide(velocity);
+

@@ -8,15 +8,17 @@ const FRICTION = 500
 const PLAYER_HOUSE_X = 250 #use this for set the spawning position when the player enters into a new place
 const PLAYER_HOUSE_Y = 230
 
+onready var Global = get_node("/root/GlobalsOfDoom")
+
 var is_it_start = true
 #end of jsalex7
 var velocity = Vector2.ZERO
 
 func _ready():
 	var scene_name = get_tree().get_current_scene().get_name()
-	if scene_name == "PlayerHouse" and !self.is_it_start:
+	if scene_name == "PlayerHouse" and !Global.is_it_start:
 		self.position = Vector2(self.PLAYER_HOUSE_X, self.PLAYER_HOUSE_Y)
-	self.is_it_start = false
+	Global.is_it_start = false
 
 func _physics_process(delta):
 	move_state(delta)

@@ -28,4 +28,12 @@ position = Vector2( 240, 240 )
 [node name="Area2D" parent="ExitTiles/Sprite" index="0"]
 next_area = "res://Scenes/WorldScenes/Village.tscn"
 
+[node name="ExitTiles2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 224, 240 )
+
+[node name="Area2D" parent="ExitTiles2/Sprite" index="0"]
+next_area = "res://Scenes/WorldScenes/Village.tscn"
+
 [editable path="ExitTiles"]
+
+[editable path="ExitTiles2"]

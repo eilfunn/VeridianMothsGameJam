@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
-const MAX_SPEED = 100
-const ACCELERATION = 500
-const FRICTION = 500
+const MAX_SPEED = 120
+const ACCELERATION = 900
+const FRICTION = 300
 
 #variable from jsalex7
 const PLAYER_HOUSE_X = 250 #use this for set the spawning position when the player enters into a new place

@@ -35,5 +35,4 @@ position = Vector2( 224, 240 )
 next_area = "res://Scenes/WorldScenes/Village.tscn"
 
 [editable path="ExitTiles"]
-
 [editable path="ExitTiles2"]

@@ -4,7 +4,6 @@
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 6.5, 8 )
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -16,6 +15,6 @@ __meta__ = {
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -8.46137e-09, 3.5 )
+position = Vector2( 0, 7.19291 )
 rotation = 1.5708
 shape = SubResource( 1 )

@@ -86,7 +86,7 @@ shape = SubResource( 10 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Moth"]
 frames = SubResource( 9 )
-frame = 7
+frame = 2
 speed_scale = 1.5
 playing = true
 

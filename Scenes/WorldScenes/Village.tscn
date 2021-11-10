@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Prefabs/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Prefabs/ExitTile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Tilemaps/wall_tile.tres" type="TileSet" id=3]
+[ext_resource path="res://Art/Sprites/pc#placeholder.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/WorldScenes/Pilp.gd" type="Script" id=5]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 23.7025
+
+[node name="Village" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 65547, 0, 0, 65548, 0, 0, 65549, 0, 0, 65550, 0, 0, 65551, 0, 0, 65552, 0, 0, 65553, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 131086, 0, 0, 131087, 0, 0, 131088, 0, 0, 131089, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 0, 0, 196623, 0, 0, 196624, 0, 0, 196625, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 262160, 0, 0, 262161, 0, 0 )
+
+[node name="ExitTiles" parent="." instance=ExtResource( 2 )]
+position = Vector2( 240, 96 )
+rotation = 3.14159
+
+[node name="Area2D" parent="ExitTiles/Sprite" index="0"]
+next_area = "res://Scenes/WorldScenes/PlayerHouse.tscn"
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 224, 96 )
+
+[node name="Pilp" type="Area2D" parent="."]
+position = Vector2( 224.69, 121.22 )
+script = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Pilp"]
+modulate = Color( 0.2, 0.92549, 0.243137, 1 )
+position = Vector2( 0.0113373, -0.010437 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pilp"]
+position = Vector2( 0.00193787, 0.0147171 )
+shape = SubResource( 1 )
+
+[editable path="ExitTiles"]

@@ -4,9 +4,7 @@
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Camera/GridSnapper.gd" type="Script" id=4]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 3.0
-height = 2.0
+[sub_resource type="RectangleShape2D" id=1]
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 2 )

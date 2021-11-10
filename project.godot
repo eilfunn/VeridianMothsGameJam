@@ -54,10 +54,6 @@ config/name="VeridianMothsGameJam"
 run/main_scene="res://Scenes/WorldScenes/Mansion.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-GlobalsOfDoom="*res://Scripts/GlobalsOfDoom.gd"
-
 [display]
 
 window/size/width=480
@@ -66,10 +62,6 @@ window/size/test_width=960
 window/size/test_height=540
 window/stretch/mode="2d"
 window/stretch/aspect="expand"
-
-[editor_plugins]
-
-enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
 
 [physics]
 

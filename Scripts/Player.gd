@@ -19,7 +19,7 @@ func _ready():
 	var scene_name = get_tree().get_current_scene().get_name()
 	if scene_name == "PlayerHouse" and !Global.is_it_start:
 		self.position = Vector2(self.PLAYER_HOUSE_X, self.PLAYER_HOUSE_Y)
-	Global.is_it_start = false
+
 
 func _physics_process(delta):
 	move_state(delta)

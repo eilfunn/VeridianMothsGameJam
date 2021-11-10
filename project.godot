@@ -51,12 +51,8 @@ _global_script_class_icons={
 [application]
 
 config/name="VeridianMothsGameJam"
-run/main_scene="res://Scenes/WorldScenes/PlayerHouse.tscn"
+run/main_scene="res://Scenes/WorldScenes/Mansion.tscn"
 config/icon="res://icon.png"
-
-[autoload]
-
-GlobalsOfDoom="*res://Scripts/GlobalsOfDoom.gd"
 
 [display]
 

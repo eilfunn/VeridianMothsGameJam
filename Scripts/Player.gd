@@ -9,9 +9,8 @@ const FRICTION = 600
 #const PLAYER_HOUSE_Y = 230
 
 #onready var Global = get_node("/root/GlobalsOfDoom")
+onready var Mansion = get_tree().get_root().get_node("Mansion")
 
-#var is_it_start = true
-#end of jsalex7
 var velocity = Vector2.ZERO
 
 #func _ready():
@@ -22,6 +21,13 @@ var velocity = Vector2.ZERO
 
 func _physics_process(delta):
 	move_state(delta)
+	spell_state(delta)
+
+func spell_state(delta):
+	if Input.is_action_just_pressed("ui_select") and Mansion.blast_visible == false:
+		Mansion.blast_visible = true
+		yield(get_tree().create_timer(2.0), "timeout")
+		Mansion.blast_visible = false
 
 func move_state(delta):
 	var input_vector = Vector2.ZERO

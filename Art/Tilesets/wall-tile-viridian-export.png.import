@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wall-tile-green-and-purple.png-a75cb6e2fc57ee082f72892bee56e08c.stex"
+path="res://.import/wall-tile-viridian-export.png-7852ce6f1f7aa060ca9bc3a7cf5c297a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Tilesets/wall-tile-green-and-purple.png"
-dest_files=[ "res://.import/wall-tile-green-and-purple.png-a75cb6e2fc57ee082f72892bee56e08c.stex" ]
+source_file="res://Art/Tilesets/wall-tile-viridian-export.png"
+dest_files=[ "res://.import/wall-tile-viridian-export.png-7852ce6f1f7aa060ca9bc3a7cf5c297a.stex" ]
 
 [params]
 

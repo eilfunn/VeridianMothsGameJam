@@ -1,6 +1,4 @@
-extends StaticBody2D
-
-
+extends Node2D
 
 onready var moth = get_parent().get_node("Moth")
 onready var player = get_parent().get_node("Player")

@@ -20,6 +20,10 @@ var velocity = Vector2.ZERO
 #		self.position = Vector2(self.PLAYER_HOUSE_X, self.PLAYER_HOUSE_Y)
 #	Global.is_it_start = false
 
+onready var animationPlayer = $AnimationPlayer
+onready var animationTree = $AnimationTree
+onready var animationState = $AnimationTree.get("parameters/playback")
+
 func _physics_process(delta):
 	move_state(delta)
 
@@ -30,8 +34,17 @@ func move_state(delta):
 	input_vector = input_vector.normalized()
 	
 	if input_vector != Vector2.ZERO:
+		if (input_vector.x < 0):
+			$Sprite.flip_h = true;
+		else:
+			$Sprite.flip_h = false;
+		
+		animationTree.set("parameters/Idle/blend_position", input_vector)
+		animationTree.set("parameters/Run/blend_position", input_vector)
+		animationState.travel("Run")
 		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 	else:
+		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	
 	velocity = move_and_slide(velocity);

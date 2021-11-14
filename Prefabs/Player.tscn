@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=2]
 
-[ext_resource path="res://Art/Sprite Ideas/PC_walking.png" type="Texture" id=1]
+[ext_resource path="res://Art/Sprites/PC_walking.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Camera/GridSnapper.gd" type="Script" id=4]
 

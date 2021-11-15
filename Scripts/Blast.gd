@@ -14,4 +14,4 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	self.visible = get_tree().get_root().get_node("Mansion").blast_visible
-	pass
+pass

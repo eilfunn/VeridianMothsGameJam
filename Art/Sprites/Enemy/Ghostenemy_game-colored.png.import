@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PC_walking-colored.png-5d325466a9a1974efdb072fd86e66ee8.stex"
+path="res://.import/Ghostenemy_game-colored.png-b99f3d1dc88eec1f911007fe175dfb27.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/PC_walking-colored.png"
-dest_files=[ "res://.import/PC_walking-colored.png-5d325466a9a1974efdb072fd86e66ee8.stex" ]
+source_file="res://Art/Sprites/Enemy/Ghostenemy_game-colored.png"
+dest_files=[ "res://.import/Ghostenemy_game-colored.png-b99f3d1dc88eec1f911007fe175dfb27.stex" ]
 
 [params]
 

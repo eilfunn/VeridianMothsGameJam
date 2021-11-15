@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wall-tile-green-and-purple.png-a75cb6e2fc57ee082f72892bee56e08c.stex"
+path="res://.import/wall-tile-viridian.png-8806ab4eaa513f32812bbdd4d2d74512.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Tilesets/wall-tile-green-and-purple.png"
-dest_files=[ "res://.import/wall-tile-green-and-purple.png-a75cb6e2fc57ee082f72892bee56e08c.stex" ]
+source_file="res://Art/Tilesets/Walls-Floor/wall-tile-viridian.png"
+dest_files=[ "res://.import/wall-tile-viridian.png-8806ab4eaa513f32812bbdd4d2d74512.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Decor_stuff.png-888b6cb9d402193df67a5ca3d11180cc.stex"
+path="res://.import/Decor_stuff.png-6644ea395b0b524eb3914ff5293d2461.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/Decor_stuff.png"
-dest_files=[ "res://.import/Decor_stuff.png-888b6cb9d402193df67a5ca3d11180cc.stex" ]
+source_file="res://Art/Tilesets/Decoration/Decor_stuff.png"
+dest_files=[ "res://.import/Decor_stuff.png-6644ea395b0b524eb3914ff5293d2461.stex" ]
 
 [params]
 

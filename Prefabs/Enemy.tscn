@@ -1,7 +1,7 @@
 [gd_scene load_steps=32 format=2]
 
-[ext_resource path="res://Art/Sprites/Ghostenemy_game-colored.png" type="Texture" id=1]
-[ext_resource path="res://Prefabs/Enemy.gd" type="Script" id=2]
+[ext_resource path="res://Art/Sprites/Enemy/Ghostenemy_game-colored.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Enemy.gd" type="Script" id=2]
 [ext_resource path="res://Prefabs/DetectionZone.tscn" type="PackedScene" id=3]
 
 [sub_resource type="CapsuleShape2D" id=1]
@@ -249,9 +249,10 @@ start_node = "Idle"
 [sub_resource type="AnimationNodeStateMachinePlayback" id=10]
 
 [sub_resource type="CircleShape2D" id=30]
-radius = 81.5843
+radius = 213.333
 
 [node name="Enemy" type="KinematicBody2D"]
+scale = Vector2( 0.6, 0.6 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

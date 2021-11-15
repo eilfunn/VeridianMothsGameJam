@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mothfamiliarrecolor-Sheet.png-48652e30f0760cc1a458a4f54cd38768.stex"
+path="res://.import/PC_stuff.png-2988693d1725783ef3518ad72e8942f1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/mothfamiliarrecolor-Sheet.png"
-dest_files=[ "res://.import/mothfamiliarrecolor-Sheet.png-48652e30f0760cc1a458a4f54cd38768.stex" ]
+source_file="res://Art/Sprites/Player/PC_stuff.png"
+dest_files=[ "res://.import/PC_stuff.png-2988693d1725783ef3518ad72e8942f1.stex" ]
 
 [params]
 

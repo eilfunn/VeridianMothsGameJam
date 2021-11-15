@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ghostenemy_game-colored.png-e2c4fab7501370c296ab98f63cb409e6.stex"
+path="res://.import/moth-final-Sheet.png-95ab4703c76696a768e62c8393e1759a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/Ghostenemy_game-colored.png"
-dest_files=[ "res://.import/Ghostenemy_game-colored.png-e2c4fab7501370c296ab98f63cb409e6.stex" ]
+source_file="res://Art/Sprites/Familiar/moth-final-Sheet.png"
+dest_files=[ "res://.import/moth-final-Sheet.png-95ab4703c76696a768e62c8393e1759a.stex" ]
 
 [params]
 

@@ -20,7 +20,6 @@ var velocity = Vector2.ZERO
 #		self.position = Vector2(self.PLAYER_HOUSE_X, self.PLAYER_HOUSE_Y)
 #	Global.is_it_start = false
 
-onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = $AnimationTree.get("parameters/playback")
 

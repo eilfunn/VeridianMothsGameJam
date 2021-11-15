@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/moth-final-Sheet.png-692c8627bd60a5b8cfae7e29078bb019.stex"
+path="res://.import/enemy_game-colored.png-1cab146d8e5ca923a8192d12e72464b3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/moth-final-Sheet.png"
-dest_files=[ "res://.import/moth-final-Sheet.png-692c8627bd60a5b8cfae7e29078bb019.stex" ]
+source_file="res://Art/Sprites/enemy_game-colored.png"
+dest_files=[ "res://.import/enemy_game-colored.png-1cab146d8e5ca923a8192d12e72464b3.stex" ]
 
 [params]
 

@@ -277,6 +277,8 @@ __meta__ = {
 "_edit_group_": true
 }
 
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Moth"]
+frames = SubResource( 10 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Moth"]
 frames = SubResource( 11 )
 frame = 3

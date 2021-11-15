@@ -6,6 +6,9 @@
 [ext_resource path="res://Scripts/Pilp.gd" type="Script" id=4]
 [ext_resource path="res://Art/Sprites/moth-viridian-Sheet.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/Moth.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Blast.gd" type="Script" id=7]
+[ext_resource path="res://Scripts/Mansion.gd" type="Script" id=8]
+[ext_resource path="res://Art/Sprites/mothfamiliarrecolor-Sheet.png" type="Texture" id=9]
 [ext_resource path="res://Prefabs/DiningTable.tscn" type="PackedScene" id=7]
 
 [sub_resource type="CircleShape2D" id=1]
@@ -51,7 +54,48 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 9 )
+region = Rect2( 16, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 9 )
+region = Rect2( 32, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 9 )
+region = Rect2( 48, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 9 )
+region = Rect2( 64, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 9 )
+region = Rect2( 80, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 9 )
+region = Rect2( 96, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 9 )
+region = Rect2( 112, 0, 16, 16 )
+
+[sub_resource type="SpriteFrames" id=19]
+animations = [ {
+"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [node name="Mansion" type="Node2D"]
+script = ExtResource( 8 )
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -233,11 +277,34 @@ __meta__ = {
 "_edit_group_": true
 }
 
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Moth"]
+frames = SubResource( 10 )
 [node name="AnimatedSprite1" type="AnimatedSprite" parent="YSort/Moth"]
 frames = SubResource( 10 )
 frame = 2
+[node name="AnimatedSprite" type="AnimatedSprite" parent="YSort/Moth"]
+frames = SubResource( 11 )
+frame = 3
 speed_scale = 1.8
 playing = true
+
+[node name="Blast" type="Node2D" parent="."]
+position = Vector2( 479.857, 81.931 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Blast"]
+frames = SubResource( 19 )
+frame = 1
+speed_scale = 1.8
+playing = true
+
+[node name="Area2D" type="Area2D" parent="Blast"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Blast/Area2D"]
+polygon = PoolVector2Array( 0.799438, 7.38542, 8.797, 7.24512, 15.2816, -13.7607, -16.5683, -13.901, -7.33841, 7.03465 )
 
 [editable path="Node2D/Room"]
 [editable path="Node2D/Room15"]

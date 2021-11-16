@@ -158,12 +158,8 @@ graph_offset = Vector2( 118, -10 )
 [node name="Player" type="KinematicBody2D"]
 collision_layer = 2
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, -9 )
 texture = ExtResource( 1 )
 hframes = 12
 frame = 8
@@ -172,6 +168,7 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 7.19291 )
 rotation = 1.5708
 shape = SubResource( 1 )
 __meta__ = {

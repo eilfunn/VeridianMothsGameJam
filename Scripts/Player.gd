@@ -3,6 +3,8 @@ extends KinematicBody2D
 const MAX_SPEED = 120
 const ACCELERATION = 900
 const FRICTION = 600
+const MAX_PP = 8
+const BLAST_PP = 4
 
 #variable from jsalex7
 #const PLAYER_HOUSE_X = 250 #use this for set the spawning position when the player enters into a new place
@@ -25,11 +27,20 @@ onready var animationState = $AnimationTree.get("parameters/playback")
 
 func _physics_process(delta):
 	move_state(delta)
-	spell_state(delta)
+	pp_counter()
+	spell_state()
+	
+func pp_counter():
+	yield(get_tree().create_timer(1.0), "timeout")
+	if Mansion.player_pp < MAX_PP:
+		Mansion.player_pp += 1
+		#print(Mansion.player_pp)
 
-func spell_state(delta):
-	if Input.is_action_just_pressed("ui_select") and Mansion.blast_visible == false:
+
+func spell_state():
+	if Input.is_action_just_pressed("ui_select") and Mansion.blast_visible == false and Mansion.player_pp >= BLAST_PP:
 		Mansion.blast_visible = true
+		Mansion.player_pp -= BLAST_PP
 		yield(get_tree().create_timer(2.0), "timeout")
 		Mansion.blast_visible = false
 

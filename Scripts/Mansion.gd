@@ -1,6 +1,9 @@
 extends Node2D
 
 var blast_visible = false
+var player_aim = "Up"
+var player_pp = 0
+var count_pp = false
 
 # Declare member variables here. Examples:
 # var a = 2

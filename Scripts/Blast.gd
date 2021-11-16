@@ -1,6 +1,5 @@
 extends Node2D
 
-
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -14,4 +13,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	self.visible = get_tree().get_root().get_node("Mansion").blast_visible
-	pass
+	if(self.visible):
+		self.global_position = get_tree().get_root().get_node("Mansion/YSort/Player").global_position
+pass

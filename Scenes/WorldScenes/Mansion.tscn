@@ -4,9 +4,11 @@
 [ext_resource path="res://Prefabs/Room.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Art/Sprites/pc#placeholder.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/Pilp.gd" type="Script" id=4]
-[ext_resource path="res://Art/Sprites/moth-viridian-Sheet.png" type="Texture" id=5]
+[ext_resource path="res://Art/Sprites/Familiar/moth-viridian-Sheet.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/Moth.gd" type="Script" id=6]
 [ext_resource path="res://Prefabs/DiningTable.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Prefabs/Enemy.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Tilemaps/decoration-set.tres" type="TileSet" id=9]
 [ext_resource path="res://Scripts/Mansion.gd" type="Script" id=8]
 [ext_resource path="res://Art/Sprites/mothfamiliarrecolor-Sheet.png" type="Texture" id=9]
 [ext_resource path="res://Scripts/Blast.gd" type="Script" id=10]
@@ -293,6 +295,147 @@ frames = SubResource( 19 )
 frame = 5
 speed_scale = 1.8
 playing = true
+
+[node name="Enemies" type="YSort" parent="YSort"]
+
+[node name="Enemy" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -96, -6.4 )
+
+[node name="Enemy13" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -80, -272 )
+
+[node name="Enemy14" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 96, -432 )
+
+[node name="Enemy15" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -80, -576 )
+
+[node name="Enemy16" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 96, -768 )
+
+[node name="Enemy17" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 80, -624 )
+
+[node name="Enemy18" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -416, -736 )
+
+[node name="Enemy31" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -640, -1136 )
+
+[node name="Enemy32" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -352, -992 )
+
+[node name="Enemy33" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -448, -1126.4 )
+
+[node name="Enemy34" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -496, -1040 )
+
+[node name="Enemy35" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 608, -768 )
+
+[node name="Enemy36" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 512, -800 )
+
+[node name="Enemy37" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 329.719, -982.4 )
+
+[node name="Enemy38" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 448, -1008 )
+
+[node name="Enemy39" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 89.6, -1072 )
+
+[node name="Enemy40" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -112, -1024 )
+
+[node name="Enemy41" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -48, -1104 )
+
+[node name="Enemy42" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 240, -1145.6 )
+
+[node name="Enemy43" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 368, -1136 )
+
+[node name="Enemy44" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 377.6, -848 )
+
+[node name="Enemy19" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -576, -473.6 )
+
+[node name="Enemy20" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -425.6, -310.4 )
+
+[node name="Enemy21" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -1424, -281.6 )
+
+[node name="Enemy22" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -1504, -480 )
+
+[node name="Enemy23" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -1328, -624 )
+
+[node name="Enemy24" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -1456, -800 )
+
+[node name="Enemy25" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -944, -800 )
+
+[node name="Enemy26" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -720, -768 )
+
+[node name="Enemy27" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -1072, -256 )
+
+[node name="Enemy28" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -816, -233.6 )
+
+[node name="Enemy29" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -1040, -550.4 )
+
+[node name="Enemy30" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( -864, -470.4 )
+
+[node name="Enemy3" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 352, -320 )
+
+[node name="Enemy4" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 688, -224 )
+
+[node name="Enemy5" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 1088, -368 )
+
+[node name="Enemy10" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 1584, -518.4 )
+
+[node name="Enemy11" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 1328, -560 )
+
+[node name="Enemy12" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 1440, -464 )
+
+[node name="Enemy6" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 592, -496 )
+
+[node name="Enemy7" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 896, -528 )
+
+[node name="Enemy8" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 832, -48 )
+
+[node name="Enemy9" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 1040, 32 )
+
+[node name="Enemy2" parent="YSort/Enemies" instance=ExtResource( 8 )]
+position = Vector2( 80, 79.4384 )
+
+[node name="TileMap" type="TileMap" parent="YSort"]
+tile_set = ExtResource( 9 )
+cell_size = Vector2( 16, 16 )
+collision_layer = 8
+format = 1
+tile_data = PoolIntArray( -5963789, 0, 0, -5963788, 1, 0, -5963787, 2, 0, -6029302, 0, 0, -6029301, 1, 0, -6029300, 2, 0, -5898253, 5, 0, -5898252, 4, 0, -5898251, 3, 0, -5963766, 5, 0, -5963765, 4, 0, -5963764, 3, 0, -5832717, 6, 0, -5832716, 7, 0, -5832715, 8, 0, -5898230, 6, 0, -5898229, 7, 0, -5898228, 8, 0, -4784131, 9, 0, -4849662, 9, 0 )
 
 [node name="Area2D" type="Area2D" parent="Blast"]
 

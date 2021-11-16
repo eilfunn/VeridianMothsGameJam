@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ghostenemy_game.png-e70dbfad3c3a808b90a441c23fbdbecb.stex"
+path="res://.import/dining-room#table.png-0ea725b8e0a4f24385699222d9a28414.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/Ghostenemy_game.png"
-dest_files=[ "res://.import/Ghostenemy_game.png-e70dbfad3c3a808b90a441c23fbdbecb.stex" ]
+source_file="res://Art/Tilesets/Decoration/dining-room#table.png"
+dest_files=[ "res://.import/dining-room#table.png-0ea725b8e0a4f24385699222d9a28414.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

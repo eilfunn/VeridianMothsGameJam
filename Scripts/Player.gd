@@ -21,7 +21,6 @@ var velocity = Vector2.ZERO
 func _ready():
 	create_power_timer() # Creating the power timer
 
-onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = $AnimationTree.get("parameters/playback")
 

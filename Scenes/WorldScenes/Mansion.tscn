@@ -279,6 +279,7 @@ __meta__ = {
 "_edit_group_": true
 }
 
+<<<<<<< Updated upstream
 [node name="AnimatedSprite1" type="AnimatedSprite" parent="YSort/Moth"]
 frames = SubResource( 10 )
 frame = 2
@@ -293,6 +294,10 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Blast"]
 frames = SubResource( 19 )
 frame = 5
+=======
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Moth"]
+frames = SubResource( 11 )
+>>>>>>> Stashed changes
 speed_scale = 1.8
 playing = true
 

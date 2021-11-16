@@ -13,13 +13,13 @@ const BLAST_PP = 4
 #onready var Global = get_node("/root/GlobalsOfDoom")
 onready var Mansion = get_tree().get_root().get_node("Mansion")
 
+# VARIABLES FOR THE POWER TIMER - Saultoons
+var power_timer = null
+
 var velocity = Vector2.ZERO
 
-#func _ready():
-#	var scene_name = get_tree().get_current_scene().get_name()
-#	if scene_name == "PlayerHouse" and !Global.is_it_start:
-#		self.position = Vector2(self.PLAYER_HOUSE_X, self.PLAYER_HOUSE_Y)
-#	Global.is_it_start = false
+func _ready():
+	create_power_timer() # Creating the power timer
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
@@ -27,14 +27,15 @@ onready var animationState = $AnimationTree.get("parameters/playback")
 
 func _physics_process(delta):
 	move_state(delta)
-	pp_counter()
 	spell_state()
-	
-func pp_counter():
-	yield(get_tree().create_timer(1.0), "timeout")
-	if Mansion.player_pp < MAX_PP:
-		Mansion.player_pp += 1
-		#print(Mansion.player_pp)
+#	pp_counter()
+
+
+#func pp_counter():
+#	yield(get_tree().create_timer(1.0), "timeout") 
+#	if Mansion.player_pp < MAX_PP:
+#		Mansion.player_pp += 1
+#		#print("Count:" + str(Mansion.player_pp))
 
 
 func spell_state():
@@ -65,4 +66,20 @@ func move_state(delta):
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 	
 	velocity = move_and_slide(velocity);
+
+func create_power_timer(): # Create a timer for the player's power meter
+	power_timer = Timer.new() # Create the new timer
+	power_timer.set_wait_time(1.0) # Will go off ever 1 second
+	power_timer.connect("timeout",self,"_on_power_timer_timeout") # Connect the timer to process
+	add_child(power_timer) # Add this as child node to player
+	power_timer.start() # Start the timer
+
+func _on_power_timer_timeout(): # Called when the timer goes off
+	if Mansion.player_pp < MAX_PP: # If players power is less than max power
+		Mansion.player_pp += 1 # Add 1 to players power 
+		print("PP:" + str(Mansion.player_pp)) # Debug print
+	else: 
+		print("PP:" + str(Mansion.player_pp) + " - MAX" ) # Debug print
+
+
 

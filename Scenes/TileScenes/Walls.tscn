@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Art/Tilesets/wall-tile-viridian.png" type="Texture" id=2]
+[ext_resource path="res://Art/Tilesets/Walls-Floor/wall-tile-new-export.png" type="Texture" id=1]
+[ext_resource path="res://Art/Tilesets/Walls-Floor/wall-tile-viridian.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 8 )
@@ -17,7 +18,7 @@ extents = Vector2( 8, 1 )
 [node name="Walls" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
+texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 0, 0, 16, 16 )
@@ -28,6 +29,54 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="Sprite18" type="Sprite" parent="."]
+position = Vector2( 96, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 0, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite18"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite18/StaticBody2D"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="Sprite19" type="Sprite" parent="."]
+position = Vector2( 96, 16 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 16, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite19/StaticBody2D"]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="Sprite20" type="Sprite" parent="."]
+position = Vector2( 96, 32 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 96, 32, 16, 16 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite20"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/StaticBody2D"]
 position = Vector2( 8, 8 )
 shape = SubResource( 1 )
 

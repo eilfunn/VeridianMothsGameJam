@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PC_walking-colored.png-5d325466a9a1974efdb072fd86e66ee8.stex"
+path="res://.import/moth-viridian-Sheet.png-3a323917fa54fa5281830283848d4470.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/PC_walking-colored.png"
-dest_files=[ "res://.import/PC_walking-colored.png-5d325466a9a1974efdb072fd86e66ee8.stex" ]
+source_file="res://Art/Sprites/Familiar/moth-viridian-Sheet.png"
+dest_files=[ "res://.import/moth-viridian-Sheet.png-3a323917fa54fa5281830283848d4470.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

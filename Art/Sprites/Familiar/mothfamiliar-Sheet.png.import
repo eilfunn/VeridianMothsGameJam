@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wall-tile-new.png-eb6b6e40395c75ad49b655a3e0ad82fa.stex"
+path="res://.import/mothfamiliar-Sheet.png-d6f0de5298c66d856d085ca8e9b63c7b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Tilesets/wall-tile-new.png"
-dest_files=[ "res://.import/wall-tile-new.png-eb6b6e40395c75ad49b655a3e0ad82fa.stex" ]
+source_file="res://Art/Sprites/Familiar/mothfamiliar-Sheet.png"
+dest_files=[ "res://.import/mothfamiliar-Sheet.png-d6f0de5298c66d856d085ca8e9b63c7b.stex" ]
 
 [params]
 

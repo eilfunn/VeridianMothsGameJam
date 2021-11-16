@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ghostenemy_game-colored.png-e2c4fab7501370c296ab98f63cb409e6.stex"
+path="res://.import/wall-tile-green-and-purple.png-1fa7f754c384a51851f2dc0b7c771cca.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/Ghostenemy_game-colored.png"
-dest_files=[ "res://.import/Ghostenemy_game-colored.png-e2c4fab7501370c296ab98f63cb409e6.stex" ]
+source_file="res://Art/Tilesets/Walls-Floor/wall-tile-green-and-purple.png"
+dest_files=[ "res://.import/wall-tile-green-and-purple.png-1fa7f754c384a51851f2dc0b7c771cca.stex" ]
 
 [params]
 

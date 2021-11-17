@@ -77,8 +77,8 @@ func _on_power_timer_timeout(): # Called when the timer goes off
 	if Mansion.player_pp < MAX_PP: # If players power is less than max power
 		Mansion.player_pp += 1 # Add 1 to players power 
 		print("PP:" + str(Mansion.player_pp)) # Debug print
-	else: 
-		print("PP:" + str(Mansion.player_pp) + " - MAX" ) # Debug print
+	#else: 
+	#	print("PP:" + str(Mansion.player_pp) + " - MAX" ) # Debug print
 
 
 

@@ -5,7 +5,7 @@
 [node name="Dirt" type="Node2D"]
 
 [node name="Sprite11" type="Sprite" parent="."]
-position = Vector2( 0, -8 )
+position = Vector2( 0, -12 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 96, 80, 16, 16 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Prefabs/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prefabs/Room.tscn" type="PackedScene" id=2]
@@ -7,6 +7,32 @@
 [ext_resource path="res://Prefabs/Moth.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Prefabs/Blast.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scripts/Mansion.gd" type="Script" id=7]
+[ext_resource path="res://Prefabs/Decoration/Table.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Prefabs/Decoration/ChairBack.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Prefabs/Decoration/ChairFront.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Prefabs/Decoration/ChairRight.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Prefabs/Decoration/CoolGuyPainting.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Prefabs/Decoration/GlobalPainting.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Prefabs/Decoration/EyePainting.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Prefabs/Decoration/MonoclePainting.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Prefabs/Decoration/MustachePainting.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Prefabs/Decoration/NautilusPainting.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Prefabs/Decoration/AfroPainterPainting.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Prefabs/Decoration/GhostPainting.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Prefabs/Decoration/CatPainting.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Prefabs/Decoration/LargeVase.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Prefabs/Decoration/GrandfatherClock.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Prefabs/Decoration/Shelf.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Prefabs/Decoration/Books0.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Prefabs/Decoration/Stain.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Prefabs/Decoration/Plate1.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Prefabs/Decoration/ChairLeft.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Prefabs/Decoration/CoffeeTable.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Prefabs/Decoration/PictureFrame.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Prefabs/Decoration/Books1.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Prefabs/Decoration/Bookself.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Prefabs/Decoration/CandleTriple.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Prefabs/Decoration/Dirt.tscn" type="PackedScene" id=33]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 44.018
@@ -179,19 +205,170 @@ script = ExtResource( 4 )
 position = Vector2( -0.00906372, -0.00954437 )
 shape = SubResource( 1 )
 
-[node name="Moth" parent="." instance=ExtResource( 5 )]
-position = Vector2( 460, 72 )
+[node name="GalleryPaintings" type="Node2D" parent="."]
+position = Vector2( -1240, -812 )
+
+[node name="AfroPainterPainting" parent="GalleryPaintings" instance=ExtResource( 18 )]
+position = Vector2( 440, -84 )
+
+[node name="CatPainting" parent="GalleryPaintings" instance=ExtResource( 20 )]
+position = Vector2( 904, -68 )
+
+[node name="CoolGuyPainting" parent="GalleryPaintings" instance=ExtResource( 12 )]
+position = Vector2( 584, -68 )
+
+[node name="EyePainting" parent="GalleryPaintings" instance=ExtResource( 14 )]
+position = Vector2( -376, -68 )
+
+[node name="GhostPainting" parent="GalleryPaintings" instance=ExtResource( 19 )]
+position = Vector2( -56, -68 )
+
+[node name="GlobalPainting" parent="GalleryPaintings" instance=ExtResource( 13 )]
+position = Vector2( 264, -68 )
+
+[node name="MonoclePainting" parent="GalleryPaintings" instance=ExtResource( 15 )]
+position = Vector2( -200, -68 )
+
+[node name="MustachePainting" parent="GalleryPaintings" instance=ExtResource( 16 )]
+position = Vector2( 104, -68 )
+
+[node name="NautilusPainting" parent="GalleryPaintings" instance=ExtResource( 17 )]
+position = Vector2( 728, -68 )
 
 [node name="YSort" type="YSort" parent="."]
-
-[node name="Player" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 480, 96 )
 
 [node name="Enemies" type="YSort" parent="YSort"]
 
 [node name="Decoration" type="YSort" parent="YSort"]
 
+[node name="ReceptionArea" type="YSort" parent="YSort/Decoration"]
+position = Vector2( 240, -144 )
+
+[node name="Vases" type="YSort" parent="YSort/Decoration/ReceptionArea"]
+
+[node name="LargeVase" parent="YSort/Decoration/ReceptionArea/Vases" instance=ExtResource( 21 )]
+position = Vector2( 216, 64 )
+
+[node name="LargeVase2" parent="YSort/Decoration/ReceptionArea/Vases" instance=ExtResource( 21 )]
+position = Vector2( 264, 64 )
+
+[node name="LargeVase3" parent="YSort/Decoration/ReceptionArea/Vases" instance=ExtResource( 21 )]
+position = Vector2( 448, 64 )
+
+[node name="LargeVase4" parent="YSort/Decoration/ReceptionArea/Vases" instance=ExtResource( 21 )]
+position = Vector2( 448, 264 )
+
+[node name="LargeVase5" parent="YSort/Decoration/ReceptionArea/Vases" instance=ExtResource( 21 )]
+position = Vector2( 8, 264 )
+
+[node name="LargeVase6" parent="YSort/Decoration/ReceptionArea/Vases" instance=ExtResource( 21 )]
+position = Vector2( 8, 64 )
+
+[node name="GrandfatherClock" parent="YSort/Decoration/ReceptionArea" instance=ExtResource( 22 )]
+position = Vector2( 112, 74 )
+
+[node name="TableSet0" type="YSort" parent="YSort/Decoration/ReceptionArea"]
+position = Vector2( 160, 88 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table" parent="YSort/Decoration/ReceptionArea/TableSet0" instance=ExtResource( 8 )]
+
+[node name="Plate1" parent="YSort/Decoration/ReceptionArea/TableSet0/Table" instance=ExtResource( 26 )]
+position = Vector2( -8, -8 )
+
+[node name="Stain" parent="YSort/Decoration/ReceptionArea/TableSet0/Table" instance=ExtResource( 25 )]
+position = Vector2( 13, -6 )
+
+[node name="ChairBack" parent="YSort/Decoration/ReceptionArea/TableSet0" instance=ExtResource( 9 )]
+position = Vector2( -8, 6 )
+
+[node name="ChairBack2" parent="YSort/Decoration/ReceptionArea/TableSet0" instance=ExtResource( 9 )]
+position = Vector2( 12, 16 )
+
+[node name="ChairFront" parent="YSort/Decoration/ReceptionArea/TableSet0" instance=ExtResource( 10 )]
+position = Vector2( -4, -10 )
+
+[node name="ChairFront2" parent="YSort/Decoration/ReceptionArea/TableSet0" instance=ExtResource( 10 )]
+position = Vector2( 17.7337, -16 )
+
+[node name="ChairRight" parent="YSort/Decoration/ReceptionArea/TableSet0" instance=ExtResource( 11 )]
+position = Vector2( 35.857, -4 )
+
+[node name="Shelf" parent="YSort/Decoration/ReceptionArea" instance=ExtResource( 23 )]
+position = Vector2( 144, 48 )
+
+[node name="Books0" parent="YSort/Decoration/ReceptionArea/Shelf" instance=ExtResource( 24 )]
+position = Vector2( -6, -2 )
+
+[node name="Stain2" parent="YSort/Decoration/ReceptionArea" instance=ExtResource( 25 )]
+position = Vector2( 136, 96 )
+
+[node name="Stain3" parent="YSort/Decoration/ReceptionArea" instance=ExtResource( 25 )]
+position = Vector2( 205, 82 )
+
+[node name="TableSet1" type="YSort" parent="YSort/Decoration/ReceptionArea"]
+position = Vector2( 304, 64 )
+
+[node name="Table" parent="YSort/Decoration/ReceptionArea/TableSet1" instance=ExtResource( 8 )]
+position = Vector2( 48, 32 )
+
+[node name="Stain" parent="YSort/Decoration/ReceptionArea/TableSet1/Table" instance=ExtResource( 25 )]
+position = Vector2( -9, -7 )
+
+[node name="Dirt" parent="YSort/Decoration/ReceptionArea/TableSet1/Table" instance=ExtResource( 33 )]
+position = Vector2( 2, 5 )
+
+[node name="ChairLeft" parent="YSort/Decoration/ReceptionArea/TableSet1" instance=ExtResource( 27 )]
+position = Vector2( 8, 24 )
+
+[node name="ChairBack" parent="YSort/Decoration/ReceptionArea/TableSet1" instance=ExtResource( 9 )]
+position = Vector2( 58, 38 )
+
+[node name="CoffeeTable" parent="YSort/Decoration/ReceptionArea/TableSet1" instance=ExtResource( 28 )]
+position = Vector2( 96, 16 )
+
+[node name="CandleTriple" parent="YSort/Decoration/ReceptionArea/TableSet1/CoffeeTable" instance=ExtResource( 32 )]
+
+[node name="Shelf2" parent="YSort/Decoration/ReceptionArea" instance=ExtResource( 23 )]
+position = Vector2( 312, 48 )
+
+[node name="PictureFrame" parent="YSort/Decoration/ReceptionArea/Shelf2" instance=ExtResource( 29 )]
+position = Vector2( 8, -1 )
+
+[node name="Books1" parent="YSort/Decoration/ReceptionArea/Shelf2" instance=ExtResource( 30 )]
+position = Vector2( -7, -1 )
+
+[node name="Books2" parent="YSort/Decoration/ReceptionArea/Shelf2" instance=ExtResource( 30 )]
+position = Vector2( -3, -1 )
+
+[node name="Shelf3" parent="YSort/Decoration/ReceptionArea" instance=ExtResource( 23 )]
+position = Vector2( 392, 48 )
+
+[node name="Stain" parent="YSort/Decoration/ReceptionArea/Shelf3" instance=ExtResource( 25 )]
+position = Vector2( -1, -5 )
+
+[node name="Books0" parent="YSort/Decoration/ReceptionArea/Shelf3" instance=ExtResource( 24 )]
+position = Vector2( 0, -2 )
+
+[node name="Bookself" parent="YSort/Decoration/ReceptionArea" instance=ExtResource( 31 )]
+position = Vector2( 352, 70 )
+
+[node name="Books1" parent="YSort/Decoration/ReceptionArea" instance=ExtResource( 30 )]
+position = Vector2( 392, 80 )
+
+[node name="Books0" parent="YSort/Decoration/ReceptionArea" instance=ExtResource( 24 )]
+position = Vector2( 311, 72 )
+
+[node name="Player" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 480, 96 )
+
 [node name="Blast" parent="." instance=ExtResource( 6 )]
+
+[node name="Moth" parent="." instance=ExtResource( 5 )]
+position = Vector2( 460, 72 )
+frame = 0
 
 [editable path="Rooms/Room"]
 [editable path="Rooms/Room15"]

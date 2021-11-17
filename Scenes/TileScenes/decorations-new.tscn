@@ -354,6 +354,7 @@ rotation = 1.5708
 shape = SubResource( 13 )
 
 [node name="Sprite18" type="Sprite" parent="."]
+visible = false
 position = Vector2( 160, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -371,6 +372,7 @@ rotation = 1.5708
 shape = SubResource( 14 )
 
 [node name="Sprite19" type="Sprite" parent="."]
+visible = false
 position = Vector2( 160, 32 )
 texture = ExtResource( 1 )
 centered = false
@@ -388,6 +390,7 @@ rotation = 1.5708
 shape = SubResource( 15 )
 
 [node name="Sprite20" type="Sprite" parent="."]
+visible = false
 position = Vector2( 144, 32 )
 texture = ExtResource( 1 )
 centered = false
@@ -405,6 +408,7 @@ rotation = 1.5708
 shape = SubResource( 16 )
 
 [node name="Sprite21" type="Sprite" parent="."]
+visible = false
 position = Vector2( 144, 64 )
 texture = ExtResource( 1 )
 centered = false
@@ -422,6 +426,7 @@ rotation = 1.5708
 shape = SubResource( 17 )
 
 [node name="Sprite22" type="Sprite" parent="."]
+visible = false
 position = Vector2( 48, 80 )
 texture = ExtResource( 1 )
 centered = false
@@ -439,6 +444,7 @@ rotation = 1.5708
 shape = SubResource( 18 )
 
 [node name="Sprite23" type="Sprite" parent="."]
+visible = false
 position = Vector2( 80, 80 )
 texture = ExtResource( 1 )
 centered = false
@@ -456,6 +462,7 @@ rotation = 1.5708
 shape = SubResource( 19 )
 
 [node name="Sprite24" type="Sprite" parent="."]
+visible = false
 position = Vector2( 64, 96 )
 texture = ExtResource( 1 )
 centered = false
@@ -473,6 +480,7 @@ rotation = 1.5708
 shape = SubResource( 20 )
 
 [node name="Sprite25" type="Sprite" parent="."]
+visible = false
 position = Vector2( 48, 96 )
 texture = ExtResource( 1 )
 centered = false
@@ -480,6 +488,7 @@ region_enabled = true
 region_rect = Rect2( 48, 112, 16, 16 )
 
 [node name="Sprite26" type="Sprite" parent="."]
+visible = false
 position = Vector2( 24, 104 )
 texture = ExtResource( 1 )
 centered = false
@@ -500,6 +509,7 @@ position = Vector2( 28, 36 )
 shape = SubResource( 22 )
 
 [node name="Sprite27" type="Sprite" parent="."]
+visible = false
 position = Vector2( -1, 104 )
 texture = ExtResource( 1 )
 centered = false
@@ -517,6 +527,7 @@ rotation = 1.5708
 shape = SubResource( 23 )
 
 [node name="Sprite28" type="Sprite" parent="."]
+visible = false
 position = Vector2( 176, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -524,6 +535,7 @@ region_enabled = true
 region_rect = Rect2( 176, 0, 16, 48 )
 
 [node name="Sprite29" type="Sprite" parent="."]
+visible = false
 position = Vector2( 192, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -531,6 +543,7 @@ region_enabled = true
 region_rect = Rect2( 192, 0, 16, 48 )
 
 [node name="Sprite30" type="Sprite" parent="."]
+visible = false
 position = Vector2( 208, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -538,6 +551,7 @@ region_enabled = true
 region_rect = Rect2( 208, 0, 16, 48 )
 
 [node name="Sprite31" type="Sprite" parent="."]
+visible = false
 position = Vector2( 176, 48 )
 texture = ExtResource( 1 )
 centered = false
@@ -545,6 +559,7 @@ region_enabled = true
 region_rect = Rect2( 176, 48, 16, 16 )
 
 [node name="Sprite32" type="Sprite" parent="."]
+visible = false
 position = Vector2( 192, 48 )
 texture = ExtResource( 1 )
 centered = false
@@ -552,6 +567,7 @@ region_enabled = true
 region_rect = Rect2( 192, 48, 16, 16 )
 
 [node name="Sprite33" type="Sprite" parent="."]
+visible = false
 position = Vector2( 208, 48 )
 texture = ExtResource( 1 )
 centered = false
@@ -559,6 +575,7 @@ region_enabled = true
 region_rect = Rect2( 208, 48, 16, 16 )
 
 [node name="Sprite34" type="Sprite" parent="."]
+visible = false
 position = Vector2( 224, 0 )
 texture = ExtResource( 1 )
 centered = false
@@ -566,6 +583,7 @@ region_enabled = true
 region_rect = Rect2( 224, 0, 48, 48 )
 
 [node name="Sprite35" type="Sprite" parent="."]
+visible = false
 position = Vector2( 224, 48 )
 texture = ExtResource( 1 )
 centered = false
@@ -573,6 +591,7 @@ region_enabled = true
 region_rect = Rect2( 224, 48, 48, 48 )
 
 [node name="Sprite36" type="Sprite" parent="."]
+visible = false
 position = Vector2( 224, 96 )
 texture = ExtResource( 1 )
 centered = false
@@ -580,6 +599,7 @@ region_enabled = true
 region_rect = Rect2( 224, 96, 48, 48 )
 
 [node name="Sprite37" type="Sprite" parent="."]
+visible = false
 position = Vector2( 224, 144 )
 texture = ExtResource( 1 )
 centered = false
@@ -587,10 +607,9 @@ region_enabled = true
 region_rect = Rect2( 224, 144, 48, 48 )
 
 [node name="Sprite38" type="Sprite" parent="."]
+visible = false
 position = Vector2( 176, 64 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
 region_rect = Rect2( 176, 64, 16, 48 )
-
-[node name="Node2D" type="Node2D" parent="."]

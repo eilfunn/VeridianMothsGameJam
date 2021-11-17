@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Art/Tilesets/Decoration/decorations-colored.png" type="Texture" id=1]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 7.0
+height = 0.0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 2.0
+height = 8.0
+
+[node name="Cloth0" type="Node2D"]
+
+[node name="Sprite26" type="Sprite" parent="."]
+position = Vector2( 0, -35 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 16, 112, 32, 48 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite26"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite26/StaticBody2D"]
+position = Vector2( 18, 36 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite26/StaticBody2D"]
+position = Vector2( 28, 36 )
+shape = SubResource( 2 )

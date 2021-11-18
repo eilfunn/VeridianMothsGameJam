@@ -5,15 +5,12 @@ const ACCELERATION = 900
 const FRICTION = 600
 const MAX_PP = 8
 const BLAST_PP = 4
-
-#variable from jsalex7
-#const PLAYER_HOUSE_X = 250 #use this for set the spawning position when the player enters into a new place
-#const PLAYER_HOUSE_Y = 230
+const BOLT_PP = 1
 
 #onready var Global = get_node("/root/GlobalsOfDoom")
 onready var Mansion = get_tree().get_root().get_node("Mansion")
 
-# VARIABLES FOR THE POWER TIMER - Saultoons
+# VARIABLES FOR THE MAGIC-POWER TIMER - Saultoons
 var power_timer = null
 
 var velocity = Vector2.ZERO
@@ -28,15 +25,6 @@ onready var animationState = $AnimationTree.get("parameters/playback")
 func _physics_process(delta):
 	move_state(delta)
 	spell_state()
-#	pp_counter()
-
-
-#func pp_counter():
-#	yield(get_tree().create_timer(1.0), "timeout") 
-#	if Mansion.player_pp < MAX_PP:
-#		Mansion.player_pp += 1
-#		#print("Count:" + str(Mansion.player_pp))
-
 
 func spell_state():
 	if Input.is_action_just_pressed("ui_select") and Mansion.blast_visible == false and Mansion.player_pp >= BLAST_PP:
@@ -67,6 +55,7 @@ func move_state(delta):
 	
 	velocity = move_and_slide(velocity);
 
+#Saul's timer for PP-meter, use this as a reference to other timers
 func create_power_timer(): # Create a timer for the player's power meter
 	power_timer = Timer.new() # Create the new timer
 	power_timer.set_wait_time(1.0) # Will go off ever 1 second
@@ -77,9 +66,6 @@ func create_power_timer(): # Create a timer for the player's power meter
 func _on_power_timer_timeout(): # Called when the timer goes off
 	if Mansion.player_pp < MAX_PP: # If players power is less than max power
 		Mansion.player_pp += 1 # Add 1 to players power 
-		print("PP:" + str(Mansion.player_pp)) # Debug print
-	else: 
-		print("PP:" + str(Mansion.player_pp) + " - MAX" ) # Debug print
 
 
 

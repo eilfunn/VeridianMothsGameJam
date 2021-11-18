@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wall-tile-viridian.png-6ec134732b71c14e2401a9752c46306a.stex"
+path="res://.import/PC_walking-colored.png-7f14b1e8873d2be2b86ef42220f41a42.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Tilesets/wall-tile-viridian.png"
-dest_files=[ "res://.import/wall-tile-viridian.png-6ec134732b71c14e2401a9752c46306a.stex" ]
+source_file="res://Art/Sprites/Player/PC_walking-colored.png"
+dest_files=[ "res://.import/PC_walking-colored.png-7f14b1e8873d2be2b86ef42220f41a42.stex" ]
 
 [params]
 

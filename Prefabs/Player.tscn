@@ -155,7 +155,7 @@ graph_offset = Vector2( 118, -10 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=8]
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" groups=["Persist"]]
 collision_layer = 2
 script = ExtResource( 2 )
 __meta__ = {

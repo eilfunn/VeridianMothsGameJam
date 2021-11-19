@@ -80,5 +80,13 @@ func _on_power_timer_timeout(): # Called when the timer goes off
 	#else: 
 	#	print("PP:" + str(Mansion.player_pp) + " - MAX" ) # Debug print
 
+func save():
+	var save_dict = {
+		"filename" : get_filename(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x,
+		"pos_y" : position.y
+	}
+	return save_dict
 
 

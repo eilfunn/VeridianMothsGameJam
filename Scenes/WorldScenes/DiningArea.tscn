@@ -1,0 +1,669 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Prefabs/Decoration/CandleTriple.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Prefabs/Decoration/Shelf.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Prefabs/Decoration/LargeVase.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Prefabs/Decoration/Stain.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Prefabs/Decoration/Dirt.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Prefabs/Decoration/ChairLeft.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Prefabs/Decoration/Table.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Prefabs/Decoration/ChairBack.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Prefabs/Decoration/ChairFront.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Prefabs/Decoration/ChairRight.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Prefabs/Decoration/CandleSingle.tscn" type="PackedScene" id=11]
+
+[node name="DiningArea" type="YSort"]
+position = Vector2( 241, -686 )
+
+[node name="Dirt" type="Node2D" parent="."]
+position = Vector2( 15, 14 )
+
+[node name="Dirt" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 38, 85 )
+
+[node name="Dirt2" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 213, 122 )
+scale = Vector2( -1, -1 )
+
+[node name="Dirt3" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 286, 202 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt4" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 381, 118 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt5" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 118, 262 )
+scale = Vector2( 1, -1 )
+
+[node name="Dirt6" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 286, 308 )
+
+[node name="Dirt7" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 521, 248 )
+scale = Vector2( 1, -1 )
+
+[node name="Dirt8" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 544, 117 )
+
+[node name="Dirt9" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 486, 173 )
+
+[node name="Dirt10" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 741, 109 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt11" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 655, 177 )
+
+[node name="Dirt12" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 764, 247 )
+scale = Vector2( 1, -1 )
+
+[node name="Dirt13" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 862, 105 )
+
+[node name="Dirt14" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 893, 245 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt15" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 863, 327 )
+
+[node name="Dirt16" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 761, 378 )
+
+[node name="Dirt17" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 621, 326 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt18" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 518, 393 )
+scale = Vector2( 1, -1 )
+
+[node name="Dirt19" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 578, 447 )
+
+[node name="Dirt20" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 709, 451 )
+
+[node name="Dirt21" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 829, 473 )
+
+[node name="Dirt22" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 358, 454 )
+scale = Vector2( 1, -1 )
+
+[node name="Dirt23" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 233, 465 )
+
+[node name="Dirt24" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 226, 544 )
+scale = Vector2( 1, -1 )
+
+[node name="Dirt25" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 120, 493 )
+
+[node name="Dirt26" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 81, 407 )
+
+[node name="Dirt27" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 152, 345 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt28" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 387, 269 )
+
+[node name="Dirt29" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 378, 142 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt30" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 451, 222 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt31" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 546, 138 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt32" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 283, 282 )
+
+[node name="Dirt33" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 451, 328 )
+
+[node name="Dirt34" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 317, 365 )
+scale = Vector2( -1, 1 )
+
+[node name="Dirt35" type="Node2D" parent="Dirt" instance=ExtResource( 5 )]
+position = Vector2( 552, 289 )
+
+[node name="Stains" type="Node2D" parent="."]
+position = Vector2( 8, 8 )
+
+[node name="Stain" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 110, 92 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain2" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 55, 79 )
+
+[node name="Stain3" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 71, 187 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain4" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 76, 189 )
+
+[node name="Stain5" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 327, 120 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain6" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 406, 197 )
+
+[node name="Stain7" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 174, 222 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain8" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 357, 288 )
+
+[node name="Stain9" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 362, 287 )
+
+[node name="Stain10" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 364, 290 )
+
+[node name="Stain11" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 358, 290 )
+
+[node name="Stain12" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 490, 302 )
+
+[node name="Stain13" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 558, 253 )
+
+[node name="Stain14" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 532, 268 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain15" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 537, 266 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain16" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 719, 299 )
+
+[node name="Stain17" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 681, 341 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain18" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 389, 400 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain19" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 200, 410 )
+
+[node name="Stain20" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 55, 479 )
+
+[node name="Stain21" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 66, 366 )
+
+[node name="Stain22" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 587, 478 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain23" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 858, 455 )
+
+[node name="Stain24" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 835, 346 )
+
+[node name="Stain25" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 854, 221 )
+
+[node name="Stain26" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 720, 160 )
+
+[node name="Stain27" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 848, 103 )
+
+[node name="Stain28" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 843, 102 )
+
+[node name="Stain29" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 838, 104 )
+
+[node name="Stain30" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 838, 100 )
+
+[node name="Stain31" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 845, 99 )
+
+[node name="Stain32" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 841, 98 )
+
+[node name="Stain33" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 651, 108 )
+scale = Vector2( 1, -1 )
+
+[node name="Stain34" type="Node2D" parent="Stains" instance=ExtResource( 4 )]
+position = Vector2( 651, 108 )
+scale = Vector2( 1, -1 )
+
+[node name="Tables" type="YSort" parent="."]
+
+[node name="Table" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 388, 300 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table2" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 419, 260 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table3" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 325, 314 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table4" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 529, 365 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table5" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 472, 325 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table6" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 575, 302 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table7" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 314, 372 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table8" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 645, 362 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table9" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 576, 397 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table10" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 458, 364 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table11" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 397, 385 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table12" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 627, 272 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table13" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 511, 265 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table14" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 267, 220 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table15" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 326, 177 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table16" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 622, 187 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table17" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 725, 212 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table18" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 724, 357 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table19" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 667, 417 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table20" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 241, 421 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table21" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 411, 449 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table22" type="Node2D" parent="Tables" instance=ExtResource( 7 )]
+position = Vector2( 636, 460 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TableSet1" type="YSort" parent="Tables"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Table23" type="Node2D" parent="Tables/TableSet1" instance=ExtResource( 7 )]
+position = Vector2( 527, 190 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Candles" type="YSort" parent="Tables/TableSet1/Table23"]
+position = Vector2( -328, -179 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CandleSingle" type="Node2D" parent="Tables/TableSet1/Table23/Candles" instance=ExtResource( 11 )]
+position = Vector2( 317, 175 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CandleSingle2" type="Node2D" parent="Tables/TableSet1/Table23/Candles" instance=ExtResource( 11 )]
+position = Vector2( 338, 172 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CandleTriple" type="Node2D" parent="Tables/TableSet1/Table23/Candles" instance=ExtResource( 1 )]
+position = Vector2( 326, 171 )
+
+[node name="Chairs" type="YSort" parent="."]
+
+[node name="ChairBack" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 467, 302 )
+
+[node name="ChairBack5" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 529, 239 )
+
+[node name="ChairBack2" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 507, 278 )
+
+[node name="ChairBack3" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 399, 319 )
+
+[node name="ChairBack6" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 402, 465 )
+
+[node name="ChairBack7" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 427, 454 )
+
+[node name="ChairBack8" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 259, 439 )
+
+[node name="ChairBack9" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 332, 433 )
+
+[node name="ChairBack10" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 653, 475 )
+
+[node name="ChairBack11" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 714, 372 )
+
+[node name="ChairBack12" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 606, 203 )
+
+[node name="ChairBack13" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 650, 199 )
+
+[node name="ChairBack14" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 692, 216 )
+
+[node name="ChairBack4" type="Node2D" parent="Chairs" instance=ExtResource( 8 )]
+position = Vector2( 584, 315 )
+
+[node name="ChairLeft" type="Node2D" parent="Chairs" instance=ExtResource( 6 )]
+position = Vector2( 499, 349 )
+
+[node name="ChairLeft2" type="Node2D" parent="Chairs" instance=ExtResource( 6 )]
+position = Vector2( 283, 389 )
+
+[node name="ChairLeft3" type="Node2D" parent="Chairs" instance=ExtResource( 6 )]
+position = Vector2( 682, 381 )
+
+[node name="ChairLeft4" type="Node2D" parent="Chairs" instance=ExtResource( 6 )]
+position = Vector2( 535, 417 )
+
+[node name="ChairLeft5" type="Node2D" parent="Chairs" instance=ExtResource( 6 )]
+position = Vector2( 474, 257 )
+
+[node name="ChairFront" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 431, 240 )
+
+[node name="ChairFront3" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 589, 277 )
+
+[node name="ChairFront4" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 666, 334 )
+
+[node name="ChairFront5" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 588, 385 )
+
+[node name="ChairFront17" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 634, 433 )
+
+[node name="ChairFront18" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 658, 405 )
+
+[node name="ChairFront19" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 700, 407 )
+
+[node name="ChairFront20" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 433, 430 )
+
+[node name="ChairFront21" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 391, 367 )
+
+[node name="ChairFront22" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 253, 402 )
+
+[node name="ChairFront6" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 448, 355 )
+
+[node name="ChairFront7" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 332, 345 )
+
+[node name="ChairFront2" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 339, 297 )
+
+[node name="ChairFront8" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 258, 179 )
+
+[node name="ChairFront9" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 281, 194 )
+
+[node name="ChairFront10" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 343, 152 )
+
+[node name="ChairFront11" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 540, 167 )
+
+[node name="ChairFront12" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 620, 179 )
+
+[node name="ChairFront13" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 651, 171 )
+
+[node name="ChairFront14" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 553, 202 )
+
+[node name="ChairFront15" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 745, 231 )
+
+[node name="ChairFront16" type="Node2D" parent="Chairs" instance=ExtResource( 9 )]
+position = Vector2( 720, 190 )
+
+[node name="ChairRight" type="Node2D" parent="Chairs" instance=ExtResource( 10 )]
+position = Vector2( 399, 240 )
+
+[node name="ChairRight6" type="Node2D" parent="Chairs" instance=ExtResource( 10 )]
+position = Vector2( 371, 191 )
+
+[node name="ChairRight7" type="Node2D" parent="Chairs" instance=ExtResource( 10 )]
+position = Vector2( 288, 216 )
+
+[node name="ChairRight2" type="Node2D" parent="Chairs" instance=ExtResource( 10 )]
+position = Vector2( 651, 293 )
+
+[node name="ChairRight3" type="Node2D" parent="Chairs" instance=ExtResource( 10 )]
+position = Vector2( 685, 247 )
+
+[node name="ChairRight4" type="Node2D" parent="Chairs" instance=ExtResource( 10 )]
+position = Vector2( 519, 319 )
+
+[node name="ChairRight5" type="Node2D" parent="Chairs" instance=ExtResource( 10 )]
+position = Vector2( 443, 307 )
+
+[node name="Shelves" type="Node2D" parent="."]
+
+[node name="Shelf" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 63, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf2" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 122, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf3" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 179, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf4" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 303, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf5" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 385, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf6" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 456, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf7" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 539, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf8" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 634, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf9" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 722, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf10" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 806, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Shelf11" type="Node2D" parent="Shelves" instance=ExtResource( 2 )]
+position = Vector2( 876, 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Vases" type="YSort" parent="."]
+
+[node name="LargeVase" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 33, 76 )
+
+[node name="LargeVase2" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 38, 514 )
+
+[node name="LargeVase3" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 203, 506 )
+
+[node name="LargeVase4" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 279, 529 )
+
+[node name="LargeVase5" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 686, 507 )
+
+[node name="LargeVase6" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 755, 519 )
+
+[node name="LargeVase7" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 921, 522 )
+
+[node name="LargeVase8" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 923, 190 )
+
+[node name="LargeVase9" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 916, 86 )
+
+[node name="LargeVase10" type="Node2D" parent="Vases" instance=ExtResource( 3 )]
+position = Vector2( 903, 126 )

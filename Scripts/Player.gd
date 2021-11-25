@@ -18,7 +18,6 @@ var velocity = Vector2.ZERO
 func _ready():
 	create_power_timer() # Creating the power timer
 
-onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = $AnimationTree.get("parameters/playback")
 
@@ -66,6 +65,9 @@ func create_power_timer(): # Create a timer for the player's power meter
 func _on_power_timer_timeout(): # Called when the timer goes off
 	if Mansion.player_pp < MAX_PP: # If players power is less than max power
 		Mansion.player_pp += 1 # Add 1 to players power 
+		print("PP:" + str(Mansion.player_pp)) # Debug print
+	#else: 
+	#	print("PP:" + str(Mansion.player_pp) + " - MAX" ) # Debug print
 
 
 

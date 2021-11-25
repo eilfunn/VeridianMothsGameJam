@@ -38,8 +38,19 @@ func move_state(delta):
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	input_vector = input_vector.normalized()
 	
+	if input_vector.x > 0:
+		Mansion.player_aim = "Right"
+	elif input_vector.x < 0:
+		Mansion.player_aim = "Left"
+	elif input_vector.y > 0:
+		Mansion.player_aim = "Down"
+	elif input_vector.y < 0:
+		Mansion.player_aim = "Up"
+	else:
+		Mansion.player_aim = "Down"
+
 	if input_vector != Vector2.ZERO:
-		if (input_vector.x < 0):
+		if (Mansion.player_aim == "Left"):
 			$Sprite.flip_h = true;
 		else:
 			$Sprite.flip_h = false;

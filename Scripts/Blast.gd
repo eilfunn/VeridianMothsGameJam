@@ -14,15 +14,11 @@ func _process(delta):
 	if self.visible:
 		self.global_position = player.global_position
 		if Mansion.player_aim == "Up":
-			self.global_position.y -= 10
-			#TODO: rotate
+			self.set_rotation_degrees(0)
 		elif Mansion.player_aim == "Right":
-			self.global_position.x +=10
-			#TODO: rotate
+			self.set_rotation_degrees(90)
 		elif Mansion.player_aim == "Down":
-			self.global_position.y += 10
-			#TODO: rotate
+			self.set_rotation_degrees(180)
 		elif Mansion.player_aim == "Left":
-			self.global_position.x -= 10
-			#TODO: rotate
+			self.set_rotation_degrees(270)
 pass

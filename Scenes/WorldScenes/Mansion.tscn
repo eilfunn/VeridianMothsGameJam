@@ -237,7 +237,7 @@ position = Vector2( 480, 96 )
 
 [node name="Moth" parent="." instance=ExtResource( 5 )]
 position = Vector2( 460, 72 )
-frame = 0
+frame = 6
 
 [editable path="Rooms/Room"]
 [editable path="Rooms/Room15"]

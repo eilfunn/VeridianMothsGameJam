@@ -1,45 +1,53 @@
 extends Node2D
 
-var selected_menu = 0
+onready var selector_one = $VBoxContainer/Start/selector1
+onready var selector_two = $VBoxContainer/Load/selector2
+onready var selector_three = $VBoxContainer/Quit/selector3
 
-func change_menu_color():
-	$NewGame.color = Color("#0b3c36")
-	$LoadGame.color = Color("#0b3c36")
-	$Quit.color = Color("#0b3c36")
-	
-	match selected_menu:
-		0:
-			$NewGame.color = Color.black
-		1:
-			$LoadGame.color = Color.black
-		2:
-			$Quit.color = Color.black
+
+var current_selection = 0
 
 func _ready():
-	change_menu_color()
+	set_current_selection(0)
 
-func _input(event):
-	if Input.is_action_just_pressed("ui_down"):
-		selected_menu = (selected_menu + 1) % 3;
-		change_menu_color()
-	elif Input.is_action_just_pressed("ui_up"):
-		if selected_menu > 0:
-			selected_menu = selected_menu - 1
-		else:
-			selected_menu = 2
-		change_menu_color()
+func _process(delta):
+	if Input.is_action_just_pressed("ui_down") and current_selection < 2:
+		current_selection += 1
+		set_current_selection(current_selection)
+	elif Input.is_action_just_pressed("ui_up") and current_selection > 0:
+		current_selection -= 1
+		set_current_selection(current_selection)
 	elif Input.is_action_just_pressed("ui_accept"):
-		match selected_menu:
-			0:
-				# New game
-				get_tree().change_scene("res://Scenes/WorldScenes/Mansion.tscn")
-			1:
-				# Load game
-				var next_level_resource = load("res://Scenes/WorldScenes/Mansion.tscn");
-				var next_level = next_level_resource.instance()
-				next_level.load_saved_game = true
-				get_tree().root.call_deferred("add_child", next_level)
-				queue_free()
-			2:
-				# Quit game
-				get_tree().quit()
+		handle_selection(current_selection)
+		
+	if $AudioStreamPlayer2D.playing == false:
+		$AudioStreamPlayer2D.play()
+	pass
+
+func _on_VideoPlayer_finished():
+	if $VideoPlayer.playing == false:
+		$VideoPlayer.play()
+	pass
+
+func handle_selection(_current_selection):
+	if _current_selection == 0:
+		get_tree().change_scene("res://Scenes/WorldScenes/Mansion.tscn")
+		queue_free()
+	elif _current_selection == 1:
+		print("Add saved game!")
+	elif _current_selection == 2:
+		get_tree().quit()
+
+func set_current_selection(_current_selection):
+	selector_one.visible = false
+	selector_two.visible = false
+	selector_three.visible = false
+	
+	if _current_selection == 0:
+		selector_one.visible = true
+	elif _current_selection == 1:
+		selector_two.visible = true
+	elif _current_selection == 2:
+		selector_three.visible = true
+		
+

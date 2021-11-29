@@ -1,8 +1,8 @@
 extends Node2D
 
-onready var selector_one = $Start/selector1
-onready var selector_two = $Load/selector2
-onready var selector_three = $Quit/selector3
+onready var selector_one = $VBoxContainer/Start/selector1
+onready var selector_two = $VBoxContainer/Load/selector2
+onready var selector_three = $VBoxContainer/Quit/selector3
 
 
 var current_selection = 0
@@ -19,6 +19,15 @@ func _process(delta):
 		set_current_selection(current_selection)
 	elif Input.is_action_just_pressed("ui_accept"):
 		handle_selection(current_selection)
+		
+	if $AudioStreamPlayer2D.playing == false:
+		$AudioStreamPlayer2D.play()
+	pass
+
+func _on_VideoPlayer_finished():
+	if $VideoPlayer.playing == false:
+		$VideoPlayer.play()
+	pass
 
 func handle_selection(_current_selection):
 	if _current_selection == 0:
@@ -40,3 +49,5 @@ func set_current_selection(_current_selection):
 		selector_two.visible = true
 	elif _current_selection == 2:
 		selector_three.visible = true
+		
+

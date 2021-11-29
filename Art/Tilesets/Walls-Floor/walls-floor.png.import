@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dining-room#table.png-0ea725b8e0a4f24385699222d9a28414.stex"
+path="res://.import/walls-floor.png-b7810e8523da7c79a5b11055dfc19f4a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Tilesets/Decoration/dining-room#table.png"
-dest_files=[ "res://.import/dining-room#table.png-0ea725b8e0a4f24385699222d9a28414.stex" ]
+source_file="res://Art/Tilesets/Walls-Floor/walls-floor.png"
+dest_files=[ "res://.import/walls-floor.png-b7810e8523da7c79a5b11055dfc19f4a.stex" ]
 
 [params]
 
